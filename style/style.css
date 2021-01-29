@@ -168,14 +168,17 @@ body {
 
 .contact {
   display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .contact .contact-items:not(:last-child) {
   margin-right: 45px;
 }
 
 .link-contact {
+  display: flex;
   color: var(--gray-text);
   text-decoration: none;
 
@@ -187,6 +190,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .icon-head-mail {
   width: 16px;
   height: 12px;
@@ -194,6 +198,12 @@ body {
   fill: currentColor;
 }
 
+.icon-head-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
 /* hero */
 .hero {
   background-color: var(--hero-bgc);
