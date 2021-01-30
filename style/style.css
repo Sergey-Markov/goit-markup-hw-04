@@ -512,7 +512,15 @@ body {
 .mail {
   margin-bottom: 9px;
 }
-
+.text-conection {
+  /* font-family: Roboto; */
+  font-style: normal;
+  font-weight: var(--bold-weight);
+  font-size: 14px;
+  line-height: 1.14px;
+  text-transform: uppercase;
+  color: var(--white-text);
+}
 /* Portfolio */
 
 /* filters */
