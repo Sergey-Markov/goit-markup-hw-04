@@ -252,6 +252,15 @@ body {
 
 /* характеристика команды */
 
+.specifications-allimg {
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 .comandspecifications {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -266,6 +275,7 @@ body {
 .comandspecifications-li {
   display: block;
   max-width: 270px;
+  height: 251px;
   margin-right: 30px;
 }
 
@@ -348,22 +358,56 @@ body {
   text-align: center;
   padding-bottom: 30px;
   padding-top: 30px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 .ourcomand-name {
   font-weight: var(--link-weight);
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 10px;
 }
 .ourcomand-specialization {
-  margin-top: 10px;
-
   color: var(--gray-text);
-
   font-weight: var(--normal-weight);
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 16px;
+}
+.comand-icons-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-link:hover .icon-instagram,
+.social-list-link:focus .icon-instagram {
+  fill: var(--main-bg-color);
+}
+.icon-instagram {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+
+.link-instagram:focus,
+.link-instagram:hover {
+  background-color: var(--accent-color);
+  fill: var(--main-bg-color);
+}
 }
 
 /* footer */
