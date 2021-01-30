@@ -392,22 +392,14 @@ body {
   background-color: var(--accent-color);
 }
 
-.social-list-link:hover .icon-instagram,
-.social-list-link:focus .icon-instagram {
+.social-list-link:hover .icon-social,
+.social-list-link:focus .icon-social {
   fill: var(--main-bg-color);
 }
-.icon-instagram {
+.icon-social {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-}
-
-
-.link-instagram:focus,
-.link-instagram:hover {
-  background-color: var(--accent-color);
-  fill: var(--main-bg-color);
-}
 }
 
 /* footer */
