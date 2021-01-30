@@ -313,7 +313,6 @@ body {
 }
 .workspace-posters-list {
   margin-right: 30px;
-  /* margin-bottom: 20px; */
 }
 .workspace-posters .workspace-posters-list:nth-child(3n) {
   margin-right: 0px;
@@ -324,8 +323,7 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.ourcomand-items .ourcomand-li {
-}
+
 .ourcomand-items .ourcomand-li:not(:last-child) {
   margin-right: 30px;
 }
@@ -400,6 +398,82 @@ body {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+}
+
+/* Наши клиенты */
+
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.regular-clients {
+  font-style: normal;
+  font-weight: var(--bold-weight);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+.client-list-items {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px; */
+}
+.yaico {
+  width: 44px;
+  height: 50px;
+}
+.company-second-left {
+  width: 40px;
+  height: 52px;
+}
+.company-circle {
+  width: 41px;
+  height: 43px;
+}
+.company-foster-peters {
+  width: 80px;
+  height: 42px;
+}
+.company-brand {
+  width: 59px;
+  height: 47px;
+}
+.company-tagline {
+  width: 89px;
+  height: 46px;
+}
+.all-company-icon {
+  fill: #afb1b8;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-link:focus,
+.client-link:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.client-link:focus .all-company-icon,
+.client-link:hover .all-company-icon {
+  fill: var(--accent-color);
 }
 
 /* footer */
