@@ -31,6 +31,8 @@
   --hero-bgc: #2f303a;
   --footer-contact-bgc: rgba(255, 255, 255, 0.6);
   --footer-bgc: #2f303a;
+  --footer-fone-socicone: rgba(255, 255, 255, 0.1);
+  --main-color-socicon: #afb1b8;
 
   /* текстовые характеристики */
   --bold-weight: 700;
@@ -179,6 +181,7 @@ body {
 
 .link-contact {
   display: flex;
+  align-items: center;
   color: var(--gray-text);
   text-decoration: none;
 
@@ -208,10 +211,20 @@ body {
 .hero {
   background-color: var(--hero-bgc);
   text-align: center;
-  /* min-width: 1600px; */
-  max-height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  /* background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/images/hero-fone.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  max-height: 600px;
+  background-position: center; */
 }
 .hero-bg-img {
   background-image: linear-gradient(
@@ -222,8 +235,10 @@ body {
     url("/images/hero-fone.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1600px;
   max-height: 600px;
   background-position: center;
+  margin: 0 auto;
 }
 .hero-h {
   color: var(--white-text);
@@ -260,7 +275,7 @@ body {
   display: block;
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--ourcomand-bgc);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -401,7 +416,7 @@ body {
 .icon-social {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: var(--main-color-socicon);
 }
 
 /* Наши клиенты */
@@ -421,9 +436,12 @@ body {
 }
 .client-list {
   display: flex;
-  justify-content: space-between;
+}
+.client-list-items:not(:last-child) {
+  margin-right: 30px;
 }
 
+}
 .yaico {
   width: 44px;
   height: 50px;
@@ -449,7 +467,7 @@ body {
   height: 46px;
 }
 .all-company-icon {
-  fill: #afb1b8;
+  fill: var(--main-color-socicon);;
 }
 
 .client-link {
@@ -516,7 +534,7 @@ body {
   font-style: normal;
   font-weight: var(--bold-weight);
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-text);
   margin-bottom: 20px;
@@ -524,16 +542,22 @@ body {
 .conection-box {
   display: flex;
   flex-direction: column;
-  width: 206px;
-  height: 80px;
   margin-left: 70px;
 }
 
 .fone {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--footer-fone-socicone);
   border-radius: 50%;
   width: 44px;
   height: 44px;
+  
+}
+
+.fone:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-icons {
+  fill: var(--white-text);
 }
 
 /* Portfolio */
@@ -596,8 +620,17 @@ body {
   width: 370px;
   margin-bottom: 30px;
 }
+.examples-list:hover,
+.examples-list:focus {
+  box-shadow: 
+  0px 1px 1px rgba(0, 0, 0, 0.12), 
+  0px 4px 4px rgba(0, 0, 0, 0.06), 
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .examples-text {
   padding: 20px 24px;
+  width: 370px;
 }
 .examples-h {
   color: var(--main-color);
